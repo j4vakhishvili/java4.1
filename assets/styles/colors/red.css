@@ -1,0 +1,51 @@
+.on {
+    text-shadow: 0px 0px #E21E2C;
+}
+
+.link:hover:before{
+    color: #bd1924;
+    z-index: 1;
+    -webkit-text-stroke: 1px #000000;
+    transform: translate(10px, -10px);
+}
+
+.link:hover:after{
+    color: #E21E2C;
+    z-index: 2;
+    -webkit-text-stroke: 1px black;
+    transform: translate(20px, -20px);
+}
+
+[data-theme="dark"] .link:hover:before {
+    color: #8b131b;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    background: #b8020f;
+    transition: 0.3s;
+}
+
+::selection {
+    background: #E21E2C;
+    color: white;
+}
+.gd{
+    background: url(../../icons/coloredicons/red/graphicdesigner-icon.svg);
+    display: inline-flex;
+}
+
+.fddev{
+    background: url(../../icons/coloredicons/red/frontenddev-icon.svg);
+    display: inline-flex;
+}
+
+.udev{
+    background: url(../../icons/coloredicons/red/unitydev-icon.svg);
+    display: inline-flex;
+}
+
+.pg{
+    background: url(../../icons/coloredicons/red/photographer-icon.svg);
+    display: inline-flex;
+}
